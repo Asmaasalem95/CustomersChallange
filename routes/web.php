@@ -13,9 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/data', function () {
-return \App\Models\Customer::all();
-});
-
 Route::get('/',[\App\Http\Controllers\Web\CustomerController::class,'index']);
 
